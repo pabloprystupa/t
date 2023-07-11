@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../CSS/estiloFormulario.css">
+    <link rel="stylesheet" href="../CSS/headerYFooter.css">
+    <link rel="shortcut icon" href="../imagenes/logo-final.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"> <!--Link para fuente de google-->
+    <link rel="stylesheet" href="../CSS/resetEstilo.css">
+    <!--Link al reset para que el footer quede siempre abajo y el body ocupe todo el lugar disponible-->
+    
+</head>
+
+<body>
+    <header>
+        <div class="burger">
+            <img src="../imagenes/barra-de-menus.png" alt="MENÚ" id="menu-burger">
+        </div>
+
+        <img src="../imagenes/logo-final.ico" alt="EDUSYNC-LOGO" class="logo-header">
+
+        <div class="menu">
+            <a href="../index.html">Página Principal</a>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor-formulario">
+            <form id="formulario" onsubmit="return validar()">
+                <div id="box_nombre">
+                    <label for="nameField">Nombre:</label>
+                    <input type="text" name="Nombre" id="nameField">
+                    
+                </div>
+                <div id="box_apellido">
+                    <label for="lastNameField">Apellido:</label>
+                    <input type="text" name="Apellido" id="lastNameField">
+                </div>
+                <div id="box_mail">
+                    <label for="mail">E-mail:</label>
+                    <input type="email" name="E-mail" id="mail">
+                </div>
+                <div id="box_contraseña">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="Password" id="pass">
+                </div>
+                <span>
+                    <label for="student">Soy estudiante</label>
+                    <input type="checkbox" name="Estudiante" id="student">
+                </span>
+                <span>
+                    <label for="tutor1">Soy tutor</label>
+                    <input type="checkbox" name="Tutor" id="tutor1">
+                </span>
+                <div id="parrafoTyC">
+                    <p><a href="términos y condiciones.html" target="_blank">Leer términos y condiciones </p></a>
+                </div>
+                <span>
+                    <input type="checkbox" name="terminosYCondiciones" id="terms">
+                    <label for="terms"> Acepto términos y condiciones </label>
+                </span>
+                <div>
+                    <input type="submit" value="Registrarse" class="botones" id="registro">
+                    <input type="reset" value="Vaciar Formulario" class="botones" id="vaciarF">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+        <div class="contenedor-logos">
+            <a href="https://twitter.com" target=_blank><img src="../imagenes/signo-de-twitter.png" alt="Twitter" class="logos-social-media"></a> 
+             <a href="https://es-la.facebook.com/" target=_blank><img src="../imagenes/facebook.png" alt="Facebook" class="logos-social-media"></a>
+              <a href="https://www.instagram.com/" target=_blank><img src="../imagenes/instagram.png" alt="Instagram" class="logos-social-media"></a>
+          </div>
+          <div id="pie-de-pagina">
+            <p><center> Todos los derechos reservados</center></p>
+            
+          </div>
+        <div class="contenedor-logo-footer">
+            <img src="../imagenes/logo-final.ico" alt="EDUSYNC-LOGO" id="logo-footer">
+        </div>
+
+    </footer>
+    <script src="../JS/validacionFormulario.js"> </script>
+    
+</body>
+
+</html>

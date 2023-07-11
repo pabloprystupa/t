@@ -1,0 +1,220 @@
+
+
+/*Estilo y maqueta del contenedor del formulario*/
+.contenedor-formulario {
+    display: flex;
+    background-color: #ffff;
+    justify-content:center; 
+    align-content: center;
+    width: 25em;
+    height: 100%;
+    border-radius: 1em
+  }
+/*Estilo y maqueta de los renglones del formulario*/
+
+form {
+    display: grid;
+    grid-template-columns: 18em;
+    row-gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+
+ 
+ 
+ 
+ .container {
+            display: grid;
+            width: 80vw;
+            padding-left:10vw;
+            padding-right: 10vw;
+            justify-content: center;
+            grid-template: auto(4);
+            gap: 5em;
+            grid-template-areas: "uno dos tres cuatro"
+                "contenido contenido contenido contenido";
+            row-gap: 1em; 
+            margin-top: 1em;
+            
+        }
+
+
+        .uno {
+            grid-area: uno;
+            
+        }
+
+        .dos {
+            grid-area: dos;
+        }
+
+        .tres {
+            grid-area: tres;
+        }
+
+        .cuatro {
+            grid-area: cuatro;
+        }
+
+        .contenidoUno {
+            display: grid;
+            width: 80vw;
+            padding-left:9vw;
+            padding-right: 10vw;
+            justify-content: center;
+            grid-area: contenido;
+            grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+            row-gap: 1em;
+            text-align: center;
+            margin-bottom: 1em;
+            
+        }
+        .pizarras{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .contenidoDos {
+                grid-area: contenido;
+                display: grid;
+                grid-template-columns: 0.5fr 0.5fr;
+                text-align: center;
+        }
+        .contenidoTres {
+            grid-area: contenido;
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            text-align: center;
+            width: 80vw;
+            padding-left:10vw;
+            padding-right: 10vw;
+    }
+    .contenidoCuatro {
+         display: flex;
+         justify-content:center; 
+         align-content: center;
+        
+}
+        .item {
+            text-align: center;
+            background-color:white;
+            padding: 10px 0px 10px;
+            align-items: center;
+            color: black;
+            background-color: #D9D9D9;
+
+        }
+
+        .boton {
+            font-size: 19px;
+            background-color: rgb(87, 212, 205);
+            padding: 8px 8px;
+            border-radius: 10px;
+            border: none;
+        }
+        .boton1 {
+            font-size: 19px;
+            padding: 5px 5px;
+            color: black;
+            border-radius: 10px;
+            border-color:  white;
+        }
+        .boton:hover {
+            background-color: grey;
+            color: white;
+        }
+        .boton1:hover {
+            border-color: grey;
+        }
+        .cambiaBorde {
+            background-color: white;
+            padding: 8px 8px;
+            color: black;
+            border-radius: 10px;
+            border-color:  white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+       
+        .tarjeta {
+            display:grid;
+            grid-template-columns: repeat(2,auto);
+            float: left;
+            border: 1px solid grey;
+            margin:4px; padding: 2px;
+            width:450px;
+            height:150px;
+            overflow:auto;
+        }
+        @media all and (max-width: 600px){
+           
+            .container {
+               display: flex;
+               width: 90vw;
+               gap: 0.5em;
+               padding: 1em;
+              
+                          
+            }
+            .contenidoUno {
+                display: flex;
+                flex-direction: column;
+                width: 70vw;
+                margin-left: 8vw;
+                padding: 2em;
+   
+             }
+            
+            .contenidoDos {
+                display: flex;
+                flex-direction: column;
+   
+             }
+             .contenidoTres {
+                display: flex;
+                flex-direction: column;
+   
+             }
+           
+                
+            }
+            .pizarras{
+                width: 95%;
+                height: 82%;
+                justify-content: center;
+            }
+        
+        
+        @media all and (min-width: 600px) and (max-width: 800px){
+            .container {
+                display:grid;
+                grid-template-columns: repeat(2,auto);
+                           
+             }
+             .contenidoUno {
+                display:grid;
+                grid-template-columns: repeat(2,auto);
+                
+    
+              }
+             
+             .contenidoDos {
+                display:grid;
+            grid-template-columns: repeat(2,auto);
+    
+              }
+              .contenidoTres {
+                display:grid;
+                grid-template-columns: repeat(1,auto);
+              }
+              .pizarras{
+                width: 90%;
+                height: 72%;
+            }
+              
+             }
+        
+      

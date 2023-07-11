@@ -1,0 +1,12 @@
+.volver {
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+#menu-burger{
+    visibility: hidden;
+}
+.menu{
+    visibility: hidden;
+}

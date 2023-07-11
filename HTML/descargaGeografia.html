@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar Documentos: Geografía</title>
+    <link rel="shortcut icon" href="../imagenes/logo-final.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/CSS_carrusel2.css">
+    <link rel="stylesheet" href="../CSS/resetEstilo.css">
+    <link rel="stylesheet" href="../CSS/headerYFooter.css">
+    <link rel="stylesheet" href="../CSS/menuDesplegable.css">
+    <link rel="stylesheet" href="../CSS/estilodescargaGeografia.css">
+    <script src="../JS/JS_carrusel2.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="burger">
+            <img src="../imagenes/barra-de-menus.png" alt="MENÚ" id="menu-burger" onclick="toggleMenu()">
+        </div>
+        <div id="menu_desplegable">
+            <ul>
+                <li><a href="../index.html">Página de Inicio</a></li>
+                <li><a href="../HTML/Enconstruccion.html">Documentos subidos</a></li>
+                <li><a href="../HTML/Enconstruccion.html">Documentos descargados</a></li>
+                <li><a href="../HTML/Enconstruccion.html">Mis tutores</a></li>
+                <li><a href="../HTML/Enconstruccion.html">Mis alumnos</a></li>
+                <li><a href="../HTML/Enconstruccion.html">Mis cursos</a></li>
+                <li><a href="../HTML/creditos.html">Créditos</a></li>
+
+            </ul>
+        </div>
+        <script src="../JS/menuDesplegable.js"></script>
+        <a href="../index.html">
+            <img src="../imagenes/logo-final.ico" alt="EDUSYNC-LOGO" class="logo-header">
+        </a>
+        <div class="menu1">
+            <a href="../HTML/Enconstruccion.html">Iniciar Sesión</a>
+            <a href="../HTML/formRegistro.html">Registrarse</a>
+            <a href="../HTML/Enconstruccion.html">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="formu">
+            <div class="contenedor-formulario">
+                <form id="formulario2">
+                    <label for="titul">Buscar por título del documento:</label>
+                    <input size="30" type="text" name="titulo" id="titul">
+                    <label for="tema">Temática del documento:</label>
+                    <select name="tematica" id="tema">
+                        <option>Geografía</option>
+                    </select>
+                    <label for="tip">Tipo de documento:</label>
+                    <select name="tipo" id="tip">
+                        <option>Ensayo</option>
+                        <option>Monografía</option>
+                        <option>Trabajo Práctico</option>
+                        <option>Ejercicios resueltos</option>
+                        <option>Informe</option>
+                        <option>Otro</option>
+                    </select>
+                    <label for="descrip">Documentos encontrados:</label>
+                    <textarea name="descrip" id="descrip" cols="40" rows="3"></textarea></fieldset>
+                    <input class="botones" type="submit" value="Descargar Documento">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor-logos">
+            <a href="https://twitter.com" target=_blank><img src="../imagenes/signo-de-twitter.png" alt="Twitter"
+                    class="logos-social-media"></a>
+            <a href="https://es-la.facebook.com/" target=_blank><img src="../imagenes/facebook.png" alt="Facebook"
+                    class="logos-social-media"></a>
+            <a href="https://www.instagram.com/" target=_blank><img src="../imagenes/instagram.png" alt="Instagram"
+                    class="logos-social-media"></a>
+        </div>
+        <div id="pie-de-pagina">
+            <p>
+                <center> Todos los derechos reservados</center>
+            </p>
+
+        </div>
+        <div class="contenedor-logo-footer">
+            <img src="../imagenes/logo-final.ico" alt="EDUSYNC-LOGO" id="logo-footer">
+        </div>
+
+    </footer>
+    <script src="../JS/cargaDocumentos.js"></script>
+
+</body>
+
+</html>

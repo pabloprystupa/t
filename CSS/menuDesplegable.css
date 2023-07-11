@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+#menu_desplegable {
+    display:none;
+    position: absolute;
+    top:100%
+    
+}
+#menu_desplegable.active {
+    display:flex;
+   
+}
+#menu_desplegable ul {
+    list-style: none;
+    width: 15em;
+    font-family: "Trirong", serif;
+    
+}
+
+#menu_desplegable ul li{
+    
+    background-color: #D9D9D9;
+    position: relative;
+    
+}
+#menu_desplegable ul li:hover{
+    
+    background-color:rgb(87, 212, 205) ;
+    
+}
+#menu_desplegable ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5em;
+    display: block;
+    margin-left: 1em;
+}
+    

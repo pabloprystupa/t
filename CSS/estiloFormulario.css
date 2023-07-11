@@ -1,0 +1,60 @@
+/*Esconde la burger del header*/
+#menu-burger{
+    visibility: hidden;
+}
+/*Estilo y maqueta del main*/
+main {
+    display: flex;
+    background-color: #D9D9D9;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+   
+}
+/*Estilo y maqueta del contenedor del formulario*/
+.contenedor-formulario {
+    display: flex;
+    background-color: #ffff;
+    justify-content: center; 
+    align-content: center;
+    width: 25em;
+    height: 100%;
+    border-radius: 1em
+  }
+/*Estilo y maqueta de los renglones del formulario*/
+
+form {
+    display: grid;
+    grid-template-columns: 18em;
+    row-gap: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+form >div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones {
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 1em;
+}
+.botones:hover {
+    color:white;
+}
+input {
+    background-color: #ece7e7;
+    border: none;
+    border-radius: 1em;
+    
+}
+.campo_incorrecto {
+    color: #f80404;
+}
+
+
+#parrafoTyC {
+    justify-content: center;
+}
